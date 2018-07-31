@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+    <com.kennyc.view.MultiStateView
+        android:id="@+id/base_sv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:msv_emptyView="@layout/layout_empty"
+        app:msv_errorView="@layout/layout_error"
+        app:msv_loadingView="@layout/layout_loading"
+        app:msv_viewState="content">
+        <!--主要内容容器-->
+        <FrameLayout
+            android:id="@+id/base_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </com.kennyc.view.MultiStateView>
+
+
+</RelativeLayout>
